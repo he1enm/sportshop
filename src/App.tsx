@@ -1,22 +1,22 @@
-import MainNavbar from "./components/MainNavbar";
+import { Routes, Route } from "react-router-dom";
+import "leaflet/dist/leaflet.css";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
 import TopNavbar from "./components/TopNavbar";
-import BestSellers from "./components/BestSellers";
-import FeaturedProduct from "./components/FeaturedProduct";
+import MainNavbar from "./components/MainNavbar";
 import Footer from "./components/Footer";
-import HeroCarousel from "./components/HeroCarousel";
 
 function App() {
     return (
-        <div>
+        <>
             <TopNavbar />
             <MainNavbar />
-            <HeroCarousel />
-            <BestSellers />
-            <FeaturedProduct />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/contact" element={<Contact />} />
+            </Routes>
             <Footer />
-
-            {/* altele */}
-        </div>
+        </>
     );
 }
 

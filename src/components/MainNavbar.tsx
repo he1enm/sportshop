@@ -8,11 +8,11 @@ const MainNavbar: FC = () => {
     const [isSearchOpen, setIsSearchOpen] = useState(false);
 
     return (
-        <nav className="bg-white shadow">
+        <nav className="bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between py-4">
                     {/* Logo */}
-                    <a href="/" className="text-green-600 text-3xl font-semibold">
+                    <a href="/" className="text-green-600 text-4xl">
                         Fit cu Stil
                     </a>
 
@@ -49,7 +49,7 @@ const MainNavbar: FC = () => {
                     {/* <div className="hidden lg:flex lg:items-center lg:justify-between lg:space-x-20"> */}
                     {/* Meniu principal */}
                     <div className="hidden lg:flex lg:items-center lg:justify-between lg:space-x-20">
-                        <ul className="flex space-x-12 text-lg font-medium text-gray-800">
+                        <ul className="flex space-x-12 text-lg text-gray-800">
                             <li>
                                 <a href="#" className="hover:text-green-600 transition">
                                     Acasă
@@ -96,7 +96,7 @@ const MainNavbar: FC = () => {
                 {/* Meniu pe mobil */}
                 {isOpen && (
                     <div className="lg:hidden">
-                        <ul className="flex flex-col space-y-4 pb-4 text-lg font-medium text-gray-800">
+                        <ul className="flex flex-col space-y-4 pb-4 text-lg text-gray-800">
                             <li>
                                 <a href="#" className="hover:text-green-600">
                                     Acasă

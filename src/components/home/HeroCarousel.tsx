@@ -1,9 +1,9 @@
 // HeroCarousel.tsx
 import Slider from "react-slick";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import img1 from "../assets/img/banner_img_01.jpg";
-import img2 from "../assets/img/flexwear.png";
-import img3 from "../assets/img/powergrip.png";
+import img1 from "../../assets/img/banner_img_01.jpg";
+import img2 from "../../assets/img/flexwear.png";
+import img3 from "../../assets/img/powergrip.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -84,10 +84,8 @@ export default function HeroCarousel() {
                                 {slide.discount}
                             </span>
                             <div className="lg:w-1/2 text-left px-25">
-                                <h1 className="text-4xl font-bold text-gray-900 mb-2">{slide.title}</h1>
-                                {slide.subtitle && (
-                                    <h2 className="text-2xl font-medium text-gray-800 mb-2">{slide.subtitle}</h2>
-                                )}
+                                <h1 className="text-4xl text-gray-900 mb-2">{slide.title}</h1>
+                                {slide.subtitle && <h2 className="text-2xl text-gray-800 mb-2">{slide.subtitle}</h2>}
                                 <p className="text-gray-700 mb-6">{slide.description}</p>
                                 <a
                                     href="#"

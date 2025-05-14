@@ -1,8 +1,8 @@
 import { FaStar, FaRegStar } from "react-icons/fa";
 
-import img1 from "../assets/img/feature_prod_01.jpg";
-import img2 from "../assets/img/feature_prod_02.jpg";
-import img3 from "../assets/img/feature_prod_03.jpg";
+import img1 from "../../assets/img/feature_prod_01.jpg";
+import img2 from "../../assets/img/feature_prod_02.jpg";
+import img3 from "../../assets/img/feature_prod_03.jpg";
 
 function FeaturedProduct() {
     return (
@@ -10,7 +10,7 @@ function FeaturedProduct() {
             <div className="container mx-auto px-4">
                 <div className="text-center py-6">
                     <div className="max-w-2xl mx-auto">
-                        <h1 className="text-5xl text-gray-900 mb-4 font-extralight">Echipat pentru Performanță</h1>
+                        <h1 className="text-5xl text-gray-900 mb-4">Echipat pentru Performanță</h1>
                         <p className="text-gray-700">🎯 „Fă mișcare. Arată bine. Trăiește Fit.”</p>
                     </div>
                 </div>
@@ -35,10 +35,10 @@ function FeaturedProduct() {
                                     </li>
                                     <li className="text-gray-400">$240.00</li>
                                 </ul>
-                                <a href="shop-single.html" className="text-xl font-light text-gray-900">
+                                <a href="shop-single.html" className="text-xl text-gray-900">
                                     SmartFit Torch
                                 </a>
-                                <p className="text-gray-700 mt-2 font-light">
+                                <p className="text-gray-700 mt-2">
                                     Lumină puternică pentru antrenamentele de seară sau plimbările de dimineață.
                                     Compactă, modernă și mereu pregătită.
                                 </p>
@@ -63,10 +63,10 @@ function FeaturedProduct() {
                                     </li>
                                     <li className="text-gray-400">$480.00</li>
                                 </ul>
-                                <a href="shop-single.html" className="text-xl font-light text-gray-900">
+                                <a href="shop-single.html" className="text-xl text-gray-900">
                                     WatchX Pro
                                 </a>
-                                <p className="text-gray-700 mt-2 font-light">
+                                <p className="text-gray-700 mt-2">
                                     Ceas smart cu stil sportiv. Monitorizează-ți pașii, pulsul și obiectivele zilnice cu
                                     tehnologie de ultimă oră.
                                 </p>
@@ -95,10 +95,10 @@ function FeaturedProduct() {
                                     </li>
                                     <li className="text-gray-400">$360.00</li>
                                 </ul>
-                                <a href="shop-single.html" className="text-xl font-light text-gray-900">
+                                <a href="shop-single.html" className="text-xl text-gray-900">
                                     RetroMotion Cam
                                 </a>
-                                <p className="text-gray-700 mt-2 font-light">
+                                <p className="text-gray-700 mt-2">
                                     Suprinde-ți progresul cu o cameră old-school, dar cu stil. Ideală pentru un vibe
                                     vintage la sală sau în parc.
                                 </p>
