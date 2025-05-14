@@ -84,10 +84,8 @@ export default function HeroCarousel() {
                                 {slide.discount}
                             </span>
                             <div className="lg:w-1/2 text-left ">
-                                <h1 className="text-4xl font-bold text-gray-900 mb-2">{slide.title}</h1>
-                                {slide.subtitle && (
-                                    <h2 className="text-2xl font-medium text-gray-800 mb-2">{slide.subtitle}</h2>
-                                )}
+                                <h1 className="text-4xl text-gray-900 mb-2">{slide.title}</h1>
+                                {slide.subtitle && <h2 className="text-2xl text-gray-800 mb-2">{slide.subtitle}</h2>}
                                 <p className="text-gray-700 max-w-100 mb-6">{slide.description}</p>
                                 <a
                                     href="#"
