@@ -1,9 +1,8 @@
-import type { FC } from "react";
 import { useState } from "react";
-
 import { FaSearch, FaCartArrowDown, FaUser, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom"; // Importă Link din react-router-dom
 
-const MainNavbar: FC = () => {
+const MainNavbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isSearchOpen, setIsSearchOpen] = useState(false);
 
@@ -12,7 +11,7 @@ const MainNavbar: FC = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between py-4">
                     {/* Logo */}
-                    <a href="/" className="text-green-600 text-4xl">
+                    <a href="/" className="text-green-600 text-5xl font-semibold">
                         Fit cu Stil
                     </a>
 
@@ -46,29 +45,27 @@ const MainNavbar: FC = () => {
                     </div>
 
                     {/* Meniu + iconițe */}
-                    {/* <div className="hidden lg:flex lg:items-center lg:justify-between lg:space-x-20"> */}
-                    {/* Meniu principal */}
                     <div className="hidden lg:flex lg:items-center lg:justify-between lg:space-x-20">
                         <ul className="flex space-x-12 text-lg text-gray-800">
                             <li>
-                                <a href="#" className="hover:text-green-600 transition">
+                                <Link to="/" className="hover:text-green-600 transition">
                                     Acasă
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#" className="hover:text-green-600 transition">
+                                <Link to="/despre" className="hover:text-green-600 transition">
                                     Despre noi
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#" className="hover:text-green-600 transition">
+                                <Link to="/shop" className="hover:text-green-600 transition">
                                     Shop
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#" className="hover:text-green-600 transition">
+                                <Link to="/contact" className="hover:text-green-600 transition">
                                     Contact
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -90,7 +87,6 @@ const MainNavbar: FC = () => {
                             </span>
                         </a>
                     </div>
-                    {/* </div> */}
                 </div>
 
                 {/* Meniu pe mobil */}
@@ -98,24 +94,24 @@ const MainNavbar: FC = () => {
                     <div className="lg:hidden">
                         <ul className="flex flex-col space-y-4 pb-4 text-lg text-gray-800">
                             <li>
-                                <a href="#" className="hover:text-green-600">
+                                <Link to="/" className="hover:text-green-600">
                                     Acasă
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#" className="hover:text-green-600">
+                                <Link to="/despre" className="hover:text-green-600">
                                     Despre noi
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#" className="hover:text-green-600">
+                                <Link to="/shop" className="hover:text-green-600">
                                     Shop
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#" className="hover:text-green-600">
+                                <Link to="/contact" className="hover:text-green-600">
                                     Contact
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                         <div className="flex space-x-6 pb-4">
