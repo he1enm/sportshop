@@ -1,4 +1,3 @@
-// HeroCarousel.tsx
 import Slider from "react-slick";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import img1 from "../../assets/img/banner_img_01.jpg";
@@ -36,18 +35,19 @@ const slides = [
 ];
 
 // Custom arrows
-const PrevArrow = (props: any) => (
+const PrevArrow = (props: React.ComponentProps<"button">) => (
     <button
         {...props}
-        className="absolute left-6 top-1/2 -translate-y-1/2 z-10 text-green-600 p-4 rounded-full hover:bg-opacity-80"
+        className="absolute left-6 top-1/2 -translate-y-1/2 z-10 text-[#59ab6e] p-4 rounded-full hover:bg-opacity-80"
     >
         <FaChevronLeft className="text-2xl" />
     </button>
 );
-const NextArrow = (props: any) => (
+
+const NextArrow = (props: React.ComponentProps<"button">) => (
     <button
         {...props}
-        className="absolute right-6 top-1/2 -translate-y-1/2 z-10 text-green-600 p-4 rounded-full hover:bg-opacity-80"
+        className="absolute right-6 top-1/2 -translate-y-1/2 z-10 text-[#59ab6e] p-4 rounded-full hover:bg-opacity-80"
     >
         <FaChevronRight className="text-2xl" />
     </button>
@@ -64,18 +64,18 @@ export default function HeroCarousel() {
         prevArrow: <PrevArrow />,
         nextArrow: <NextArrow />,
         dots: true,
-        appendDots: (dots: any) => (
+        appendDots: (dots: React.ReactNode[]) => (
             <div>
-                <ul className="flex justify-center gap-2 mt-4 ">{dots}</ul>
+                <ul className="flex justify-center gap-2 mt-4">{dots}</ul>
             </div>
         ),
         customPaging: (i: number) => (
-            <div className="w-3 h-1 bg-gray-300  hover:bg-green-600 transition-colors duration-300 " />
+            <div data-index={i} className="w-3 h-1 bg-gray-300 hover:bg-[#59ab6e] transition-colors duration-300" />
         ),
     };
 
     return (
-        <div className="relative w-full overflow-hidden bg-gray-100 pb-10">
+        <div className="relative w-full overflow-hidden bg-[#efefef] pb-10">
             <Slider {...settings}>
                 {slides.map((slide, index) => (
                     <div key={index}>
@@ -89,7 +89,7 @@ export default function HeroCarousel() {
                                 <p className="text-gray-700 max-w-100 mb-6">{slide.description}</p>
                                 <a
                                     href="#"
-                                    className="inline-block bg-green-600 hover:bg-green-700 text-white px-6 py-2 transition"
+                                    className="inline-block bg-[#59ab6e] hover:bg-green-700 text-white px-6 py-2 transition"
                                 >
                                     {slide.button}
                                 </a>

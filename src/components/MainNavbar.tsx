@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaSearch, FaCartArrowDown, FaUser, FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom"; // Importă Link din react-router-dom
+import { Link } from "react-router-dom";
 
 const MainNavbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +11,7 @@ const MainNavbar = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between py-4">
                     {/* Logo */}
-                    <a href="/" className="text-green-600 text-5xl font-semibold">
+                    <a href="/" className="text-[#59ab6e] text-5xl font-semibold">
                         Fit cu Stil
                     </a>
 
@@ -48,22 +48,22 @@ const MainNavbar = () => {
                     <div className="hidden lg:flex lg:items-center lg:justify-between lg:space-x-20">
                         <ul className="flex space-x-12 text-lg text-gray-800">
                             <li>
-                                <Link to="/" className="hover:text-green-600 transition">
+                                <Link to="/" className="hover:text-[#59ab6e] transition">
                                     Acasă
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/despre" className="hover:text-green-600 transition">
+                                <Link to="/about" className="hover:text-[#59ab6e] transition">
                                     Despre noi
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/shop" className="hover:text-green-600 transition">
+                                <Link to="/shop" className="hover:text-[#59ab6e] transition">
                                     Shop
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/contact" className="hover:text-green-600 transition">
+                                <Link to="/contact" className="hover:text-[#59ab6e] transition">
                                     Contact
                                 </Link>
                             </li>
@@ -71,16 +71,16 @@ const MainNavbar = () => {
                     </div>
                     {/* Iconițe */}
                     <div className=" hidden lg:flex lg:items-center lg:justify-between lg:space-x-6">
-                        <button className="text-gray-800 hover:text-green-600" onClick={() => setIsSearchOpen(true)}>
+                        <button className="text-gray-800 hover:text-[#59ab6e]" onClick={() => setIsSearchOpen(true)}>
                             <FaSearch size={20} />
                         </button>
-                        <a href="#" className="text-gray-800 hover:text-green-600 relative">
+                        <a href="#" className="text-gray-800 hover:text-[#59ab6e] relative">
                             <FaCartArrowDown size={20} />
                             <span className="absolute -top-2 -right-2 bg-gray-300 text-xs px-1 rounded-full text-black">
                                 {/* 1 */}
                             </span>
                         </a>
-                        <a href="#" className="text-gray-800 hover:text-green-600 relative">
+                        <a href="#" className="text-gray-800 hover:text-[#59ab6e] relative">
                             <FaUser size={20} />
                             <span className="absolute -top-2 -right-2 bg-gray-300 text-xs px-1 rounded-full text-black">
                                 {/* 2 */}
@@ -94,37 +94,37 @@ const MainNavbar = () => {
                     <div className="lg:hidden">
                         <ul className="flex flex-col space-y-4 pb-4 text-lg text-gray-800">
                             <li>
-                                <Link to="/" className="hover:text-green-600">
+                                <Link to="/" className="hover:text-[#59ab6e]">
                                     Acasă
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/despre" className="hover:text-green-600">
+                                <Link to="/about" className="hover:text-[#59ab6e]">
                                     Despre noi
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/shop" className="hover:text-green-600">
+                                <Link to="/shop" className="hover:text-[#59ab6e]">
                                     Shop
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/contact" className="hover:text-green-600">
+                                <Link to="/contact" className="hover:text-[#59ab6e]">
                                     Contact
                                 </Link>
                             </li>
                         </ul>
                         <div className="flex space-x-6 pb-4">
                             <button
-                                className="text-gray-800 hover:text-green-600"
+                                className="text-gray-800 hover:text-[#59ab6e]"
                                 onClick={() => setIsSearchOpen(true)}
                             >
                                 <FaSearch size={20} />
                             </button>
-                            <a href="#" className="text-gray-800 hover:text-green-600 relative">
+                            <a href="#" className="text-gray-800 hover:text-[#59ab6e] relative">
                                 <FaCartArrowDown size={20} />
                             </a>
-                            <a href="#" className="text-gray-800 hover:text-green-600 relative">
+                            <a href="#" className="text-gray-800 hover:text-[#59ab6e] relative">
                                 <FaUser size={20} />
                             </a>
                         </div>
@@ -150,7 +150,7 @@ const MainNavbar = () => {
                                     className="w-full border border-gray-300 rounded-[10px] pl-6 pr-14 py-4 text-lg focus:outline-none focus:ring-2 focus:ring-green-500"
                                 />
                                 <button
-                                    className="absolute right-0 top-0 bottom-0 bg-green-600 text-white px-5 rounded-r-[10px] hover:bg-green-700 flex items-center justify-center"
+                                    className="absolute right-0 top-0 bottom-0 bg-[#59ab6e] text-white px-5 rounded-r-[10px] hover:bg-green-700 flex items-center justify-center"
                                     aria-label="Search"
                                 >
                                     <FaSearch />

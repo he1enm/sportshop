@@ -55,7 +55,7 @@ function ContactForm() {
                 <div className="text-right">
                     <button
                         type="submit"
-                        className="bg-green-600 text-white px-6 py-3 rounded-md text-lg hover:bg-green-700 transition"
+                        className="bg-[#59ab6e] text-white px-6 py-3 rounded-md text-lg hover:bg-green-700 transition"
                     >
                         Începe conversația
                     </button>

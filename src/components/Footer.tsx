@@ -2,12 +2,12 @@ import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaFacebookF, FaInstagram, FaTwitte
 
 function Footer() {
     return (
-        <footer className="bg-gray-800 text-white ">
-            <div className="max-w-7xl mx-auto py-12 px-16">
+        <footer className="bg-[#212934] text-white ">
+            <div className="max-w-7xl mx-auto py-12 px-5">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {/* Col 1 */}
                     <div>
-                        <h2 className="text-2xl text-green-500 border-b border-gray-400 pb-3 mb-4">Fit cu Stil</h2>
+                        <h2 className="text-2xl text-[#59ab6e] border-b border-gray-400 pb-3 mb-4">Fit cu Stil</h2>
                         <ul className="space-y-3 text-gray-300 text-sm">
                             <li className="flex items-start gap-2">
                                 <FaMapMarkerAlt className="mt-1" />
@@ -77,7 +77,7 @@ function Footer() {
                             <a
                                 key={idx}
                                 href="#"
-                                className="w-10 h-10 flex items-center justify-center border border-gray-400 rounded-full hover:bg-green-600 transition"
+                                className="w-10 h-10 flex items-center justify-center border border-gray-400 rounded-full hover:bg-[#59ab6e] transition"
                             >
                                 <Icon />
                             </a>
@@ -89,9 +89,9 @@ function Footer() {
                         <input
                             type="text"
                             placeholder="Email address"
-                            className="bg-gray-900 text-white px-4 py-2 outline-none"
+                            className="bg-[#212934] text-white px-4 py-2 outline-none"
                         />
-                        <button className="bg-green-600 px-4 py-2 text-white hover:bg-green-700 transition">
+                        <button className="bg-[#59ab6e] px-4 py-2 text-white hover:bg-green-700 transition">
                             Subscribe
                         </button>
                     </div>
@@ -99,7 +99,7 @@ function Footer() {
             </div>
 
             {/* Bottom bar */}
-            <div className="bg-gray-900 text-gray-400 text-sm py-4 px-25">
+            <div className="bg-[#1d242d] text-gray-400 text-sm py-4 px-25">
                 <p>
                     &copy; 2025 Company Name | Designed by{" "}
                     <a href="#" className="text-white hover:underline">

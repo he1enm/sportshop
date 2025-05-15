@@ -25,7 +25,7 @@ function BestSellers() {
                         />
                     </a>
                     <h5 className="mt-4 mb-3 text-xl text-center">Watches</h5>
-                    <a href="#" className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition">
+                    <a href="#" className="bg-[#59ab6e] text-white px-4 py-2 rounded hover:bg-green-700 transition">
                         Cumpără acum
                     </a>
                 </div>
@@ -39,7 +39,7 @@ function BestSellers() {
                         />
                     </a>
                     <h5 className="mt-4 mb-3 text-xl text-center">Shoes</h5>
-                    <a href="#" className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition">
+                    <a href="#" className="bg-[#59ab6e] text-white px-4 py-2 rounded hover:bg-green-700 transition">
                         Cumpără acum
                     </a>
                 </div>
@@ -53,7 +53,7 @@ function BestSellers() {
                         />
                     </a>
                     <h5 className="mt-4 mb-3 text-xl text-center">Accessories</h5>
-                    <a href="#" className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition">
+                    <a href="#" className="bg-[#59ab6e] text-white px-4 py-2 rounded hover:bg-green-700 transition">
                         Cumpără acum
                     </a>
                 </div>
