@@ -5,7 +5,7 @@ import img3 from "../../assets/img/feature_prod_03.jpg";
 
 function FeaturedProduct() {
     return (
-        <section className="bg-gray-100 py-12 px-25">
+        <section className="bg-gray-100 py-12 px-4 md:px-25">
             <div className="container mx-auto px-4">
                 <div className="text-center py-6">
                     <div className="max-w-2xl mx-auto">

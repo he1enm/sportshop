@@ -7,8 +7,8 @@ const MainNavbar = () => {
     const [isSearchOpen, setIsSearchOpen] = useState(false);
 
     return (
-        <nav className="bg-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav className="bg-white ">
+            <div className="max-w-7xl mx-auto sm:px-6 lg:px-1">
                 <div className="flex justify-between py-4">
                     {/* Logo */}
                     <a href="/" className="text-[#59ab6e] text-5xl font-semibold">

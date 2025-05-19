@@ -60,7 +60,7 @@ export default function Brands() {
     };
 
     return (
-        <section className="bg-gray-100 py-12 md:px-70">
+        <section className="bg-[#e9eef5] py-28 md:px-70">
             <div className="container mx-auto px-4 text-center">
                 <h1 className="text-5xl text-gray-900 mb-4">Brandurile noastre</h1>
                 <p className="max-w-2xl mx-auto mb-8 text-gray-600">
