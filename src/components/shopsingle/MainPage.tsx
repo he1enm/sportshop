@@ -15,20 +15,22 @@ import img7 from "../../assets/img/product_single_07.jpg";
 import img8 from "../../assets/img/product_single_08.jpg";
 import img9 from "../../assets/img/product_single_09.jpg";
 
-const NextArrow = (props: any) => {
-    const { onClick } = props;
+interface ArrowProps {
+    onClick?: () => void;
+}
+
+const NextArrow = ({ onClick }: ArrowProps) => {
     return (
         <div
             onClick={onClick}
-            className="absolute right-0 top-1/2 transform -translate-y-1/2  z-10 cursor-pointer text-2xl text-black"
+            className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer text-2xl text-black"
         >
             <FaChevronRight />
         </div>
     );
 };
 
-const PrevArrow = (props: any) => {
-    const { onClick } = props;
+const PrevArrow = ({ onClick }: ArrowProps) => {
     return (
         <div
             onClick={onClick}
@@ -42,7 +44,7 @@ const PrevArrow = (props: any) => {
 function MainPage() {
     const thumbnails = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
 
-    const [mainImage, setMainImage] = useState(thumbnails[0]);
+    const [mainImage, setMainImage] = useState<string>(thumbnails[0]);
     const sliderSettings = {
         dots: false,
         infinite: false,
@@ -55,7 +57,7 @@ function MainPage() {
 
     return (
         <section className="bg-gray-100 py-10">
-            <div className=" max-w-7xl container mx-auto  grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <div className="max-w-7xl container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
                 {/* LEFT SIDE - Images */}
                 <div>
                     <div className="mb-4">
@@ -67,7 +69,7 @@ function MainPage() {
                                 <img
                                     src={img}
                                     alt={`Thumbnail ${index + 1}`}
-                                    className="w-full rounded border"
+                                    className="w-full rounded border cursor-pointer"
                                     onClick={() => setMainImage(img)}
                                 />
                             </div>
@@ -81,9 +83,9 @@ function MainPage() {
                     <p className="text-2xl mb-4">$25.00</p>
                     <div className="flex items-center space-x-1 mb-4">
                         {[...Array(4)].map((_, i) => (
-                            <FaStar key={i} className=" text-yellow-400"></FaStar>
+                            <FaStar key={i} className="text-yellow-400" />
                         ))}
-                        <FaRegStar className=" text-gray-300"></FaRegStar>
+                        <FaRegStar className="text-gray-300" />
                         <span className="text-gray-600 ml-2">Rating 4.8 | 36 Comments</span>
                     </div>
 
