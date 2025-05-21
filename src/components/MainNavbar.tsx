@@ -126,18 +126,18 @@ const MainNavbar = () => {
                             {/* Input + iconițe mobile */}
                             <div className="flex justify-between items-center space-x-4 pb-4">
                                 {/* Input căutare cu iconiță */}
-                                <div className="flex items-center border border-gray-200 rounded-md overflow-hidden">
+                                <div className="relative w-full max-w-xs">
                                     <input
                                         type="text"
                                         placeholder="Search..."
-                                        className=" px-3 py-2 text-sm w-60 outline-none"
+                                        className="w-full px-4 pr-10 py-2 text-sm border border-gray-200 rounded-md outline-none"
                                     />
                                     <button
-                                        className="bg-gray-300 px-3 py-3 text-blak"
                                         onClick={() => setIsSearchOpen(true)}
+                                        className="absolute right-0 top-0 h-full px-3 flex items-center justify-center bg-gray-300 rounded-r-md hover:bg-gray-400 transition"
                                         aria-label="Caută"
                                     >
-                                        <FaSearch size={16} />
+                                        <FaSearch size={16} className="text-black" />
                                     </button>
                                 </div>
 

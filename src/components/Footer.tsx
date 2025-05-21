@@ -89,7 +89,7 @@ function Footer() {
                         <input
                             type="text"
                             placeholder="Email address"
-                            className="bg-[#212934] text-white px-4 py-2 outline-none"
+                            className="bg-[#212934] text-white px-1 py-2 outline-none"
                         />
                         <button className="bg-[#59ab6e] px-4 py-2 text-white hover:bg-green-700 transition">
                             Subscribe

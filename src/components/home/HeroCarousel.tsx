@@ -38,7 +38,7 @@ const slides = [
 const PrevArrow = (props: React.ComponentProps<"button">) => (
     <button
         {...props}
-        className="absolute left-6 top-1/2 -translate-y-1/2 z-10 text-[#59ab6e] p-4 rounded-full hover:bg-opacity-80"
+        className="absolute left-1 top-1/2 -translate-y-1/2 z-10 text-[#59ab6e] p-4 rounded-full hover:bg-opacity-80"
     >
         <FaChevronLeft className="text-2xl" />
     </button>
@@ -47,7 +47,7 @@ const PrevArrow = (props: React.ComponentProps<"button">) => (
 const NextArrow = (props: React.ComponentProps<"button">) => (
     <button
         {...props}
-        className="absolute right-6 top-1/2 -translate-y-1/2 z-10 text-[#59ab6e] p-4 rounded-full hover:bg-opacity-80"
+        className="absolute right-1 top-1/2 -translate-y-1/2 z-10 text-[#59ab6e] p-4 rounded-full hover:bg-opacity-80"
     >
         <FaChevronRight className="text-2xl" />
     </button>
@@ -79,7 +79,7 @@ export default function HeroCarousel() {
             <Slider {...settings}>
                 {slides.map((slide, index) => (
                     <div key={index}>
-                        <div className="flex flex-col-reverse lg:flex-row items-center justify-between container mx-auto px-25 py-12 relative">
+                        <div className="flex flex-col-reverse lg:flex-row items-center justify-between container mx-auto px-12 sm:px-10 md:px-16 py-12 relative">
                             <span className="absolute top-6 right-6 bg-red-500 text-white px-3 py-1 rounded text-sm shadow-md z-10">
                                 {slide.discount}
                             </span>
