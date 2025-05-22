@@ -4,7 +4,7 @@ import img3 from "../../assets/img/category_img_03.jpg";
 
 function BestSellers() {
     return (
-        <section className="w-full py-12 px-4 sm:px-6 lg:px-28">
+        <section className="py-12 px-6 sm:px-10 lg:px-1 2xl:px-[20%]">
             <div className="text-center pt-6">
                 <div className="max-w-2xl mx-auto">
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl text-gray-900 mb-4">
@@ -17,7 +17,7 @@ function BestSellers() {
                 </div>
             </div>
 
-            <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 ">
+            <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-4">
                 {[
                     { img: img1, label: "Watches" },
                     { img: img2, label: "Shoes" },

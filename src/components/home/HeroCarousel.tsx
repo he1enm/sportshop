@@ -79,11 +79,11 @@ export default function HeroCarousel() {
             <Slider {...settings}>
                 {slides.map((slide, index) => (
                     <div key={index}>
-                        <div className="flex flex-col-reverse lg:flex-row items-center justify-between container mx-auto px-12 sm:px-10 md:px-16 py-12 relative">
+                        <div className="flex flex-col-reverse lg:flex-row items-center justify-between max-w-7xl mx-auto px-12 sm:px-10 lg:px-1 py-12 relative">
                             <span className="absolute top-6 right-6 bg-red-500 text-white px-3 py-1 rounded text-sm shadow-md z-10">
                                 {slide.discount}
                             </span>
-                            <div className="lg:w-1/2 text-left ">
+                            <div className="lg:w-1/2 text-left">
                                 <h1 className="text-4xl text-gray-900 mb-2">{slide.title}</h1>
                                 {slide.subtitle && <h2 className="text-2xl text-gray-800 mb-2">{slide.subtitle}</h2>}
                                 <p className="text-gray-700 max-w-100 mb-6">{slide.description}</p>

@@ -2,8 +2,8 @@ import { FaEnvelope, FaPhone, FaFacebookF, FaInstagram, FaTwitter, FaLinkedin } 
 
 function TopNavbar() {
     return (
-        <nav className="hidden lg:block bg-[#212934] text-[#cfd6e1] px-25">
-            <div className="mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center text-xs">
+        <nav className="hidden lg:block bg-[#212934] text-[#cfd6e1]">
+            <div className="max-w-7xl mx-auto sm:px-6 lg:px-1 py-3 flex justify-between items-center text-xs">
                 <div className="flex items-center space-x-4">
                     <div className="flex items-center space-x-1">
                         <FaEnvelope className="text-[12px]" />

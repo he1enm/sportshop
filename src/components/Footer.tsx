@@ -99,13 +99,15 @@ function Footer() {
             </div>
 
             {/* Bottom bar */}
-            <div className="bg-[#1d242d] text-gray-400 text-sm py-4 px-25">
-                <p>
-                    &copy; 2025 Company Name | Designed by{" "}
-                    <a href="#" className="text-white hover:underline">
-                        Sport Company
-                    </a>
-                </p>
+            <div className="bg-[#1d242d] text-gray-400 text-sm py-4">
+                <div className="max-w-7xl mx-auto sm:px-6 lg:px-1">
+                    <p>
+                        &copy; 2025 Company Name | Designed by{" "}
+                        <a href="#" className="text-white hover:underline">
+                            Sport Company
+                        </a>
+                    </p>
+                </div>
             </div>
         </footer>
     );
