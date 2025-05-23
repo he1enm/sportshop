@@ -3,7 +3,7 @@ import img1 from "../../assets/img/about-hero.svg";
 function Banner() {
     return (
         <section className="bg-[#59ab6e] py-12">
-            <div className="container mx-auto px-5 md:px-25">
+            <div className="container mx-auto px-5 md:px-28">
                 <div className="flex flex-col md:flex-row items-center gap-8 py-8">
                     <div className="md:w-2/3 text-white">
                         <h1 className="text-4xl font-semibold mb-4">1. Scurtă Introducere</h1>

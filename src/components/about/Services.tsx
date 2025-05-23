@@ -2,7 +2,7 @@ import { FaTruck, FaExchangeAlt, FaPercent, FaUser } from "react-icons/fa";
 
 function Services() {
     return (
-        <section className="py-12 px-5 md:px-25">
+        <section className="py-12 px-5 md:px-28">
             <div className="text-center pt-10 pb-6">
                 <div className="max-w-2xl mx-auto">
                     <h1 className="text-5xl text-gray-900 mb-4">Serviciile Noastre</h1>
