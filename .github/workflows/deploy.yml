@@ -51,7 +51,8 @@ jobs:
               run: docker push ghcr.io/he1enm/sportshop:latest
 
 release:
-    needs: docker
+    needs: build
+    if: startsWith(github.ref, 'refs/tags/v')
     runs-on: ubuntu-latest
     steps:
         - name: Checkout code
